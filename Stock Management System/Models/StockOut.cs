@@ -11,7 +11,10 @@ namespace Stock_Management_System.Models
         public int Id { get; set; }
 
         [Required]
-        public int ProductId { get; set; }
+        public string Item { get; set; }
+
+        [Required]
+        public string Company { get; set; }
 
         [Required]
         public double Quantity { get; set; }
@@ -20,8 +23,8 @@ namespace Stock_Management_System.Models
         public string Reason { get; set; }
 
         [Required]
-        //[DataType(DataType.Date)]
-        //[DisplayFormat(DataFormatString = "{0:MMMM dd, yyyy}")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:MMMM dd, yyyy}")]
         public DateTime Date { get; set; }
     }
 }
