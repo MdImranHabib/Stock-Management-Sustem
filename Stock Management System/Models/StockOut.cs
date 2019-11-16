@@ -6,6 +6,7 @@ using System.Web;
 
 namespace Stock_Management_System.Models
 {
+    [Serializable]
     public class StockOut
     {
         public int Id { get; set; }
@@ -23,7 +24,7 @@ namespace Stock_Management_System.Models
         public string Reason { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
+        //[DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MMMM dd, yyyy}")]
         public DateTime Date { get; set; }
     }

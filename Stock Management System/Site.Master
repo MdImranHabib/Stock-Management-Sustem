@@ -54,6 +54,9 @@
                         <li><a runat="server" href="UI/CategorySetupUI.aspx">Category</a></li>
                         <li><a runat="server" href="UI/CompanySetupUI.aspx">Company</a></li>
                         <li><a runat="server" href="UI/ItemSetupUI.aspx">Item</a></li>
+                        <li><a runat="server" href="UI/StockInUI.aspx">StockIn</a></li>
+                        <li><a runat="server" href="UI/StockOutUI.aspx">StockOUt</a></li>
+                        <li><a runat="server" href="UI/SearchandViewUI.aspx">SearchandViewItems</a></li>
                     </ul>
                 </div>
             </div>

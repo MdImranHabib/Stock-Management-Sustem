@@ -21,7 +21,7 @@
     </div>
     <hr />
     <div class="row">
-        <asp:GridView ID="gridCategory" runat="server" AutoGenerateColumns="False" CellPadding="4" Font-Size="Medium" ForeColor="#333333" GridLines="None" Height="161px" HorizontalAlign="Center" Width="511px">
+        <asp:GridView ID="gridCategory" runat="server" AutoGenerateColumns="False" CellPadding="4" Font-Size="Medium" ForeColor="#333333" GridLines="None" Height="161px" HorizontalAlign="Center" Width="511px" OnSelectedIndexChanged="gridCategory_SelectedIndexChanged">
         <AlternatingRowStyle BackColor="White" />
         <EditRowStyle BackColor="#7C6F57" />
         <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
@@ -34,6 +34,7 @@
         <SortedDescendingCellStyle BackColor="#D4DFE1" />
         <SortedDescendingHeaderStyle BackColor="#15524A" />
         <Columns>
+            <asp:CommandField ShowSelectButton="True" />
             <asp:TemplateField HeaderText="SL No.">
                 <ItemTemplate>
                     <%#Eval("Id") %>

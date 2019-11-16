@@ -28,12 +28,14 @@ namespace Stock_Management_System.UI
         {
             ddlCategory.DataSource = categoryManager.ShowCategories();
             ddlCategory.DataBind();
+            ddlCategory.Items.Insert(0, new System.Web.UI.WebControls.ListItem(text: "Select Category", value: "0"));
         }
 
         private void BindCompany()
         {
             ddlCompany.DataSource = companyManager.ShowCompanies();
             ddlCompany.DataBind();
+            ddlCompany.Items.Insert(0, new System.Web.UI.WebControls.ListItem(text: "Select Company", value: "0"));
         }
 
         protected void btnSave_Click(object sender, EventArgs e)

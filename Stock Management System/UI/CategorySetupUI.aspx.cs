@@ -35,5 +35,14 @@ namespace Stock_Management_System.UI
 
             BindCategory();
         }
+
+        protected void gridCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string categoryId = gridCategory.SelectedRow.Cells[0].Text;
+            string categoryName = gridCategory.SelectedRow.Cells[1].Text;
+
+            inputName.Value = categoryName;
+
+        }
     }
 }
